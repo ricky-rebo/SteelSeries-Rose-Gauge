@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Wind Rose gauge addon for steelseries gauges library.",
   "homepage": "https://github.com/ricky-rebo/SteelSeries-Rose-Gauge#readme",
-  "main": "dist/index.js",
+  "main": "dist/steelseries-rose.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist/**/*"
