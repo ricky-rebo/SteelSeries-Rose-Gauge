@@ -1,4 +1,4 @@
-import { drawFrame, drawBackground, drawForeground, BackgroundColor, FrameDesign, ForegroundType, Odometer, OdometerParams } from "steelseries";
+import * as ss from "steelseries";
 import RGraph from './RGraph.rose.js';
 import Tween from "./tween.js";
 
@@ -7,22 +7,22 @@ export interface RoseParams {
 	titleString?: string,
 	unitString?: string,
 	pointSymbols?: string[],
-	frameDesign?: FrameDesign,
+	frameDesign?: ss.FrameDesign,
 	frameVisible?: boolean,
-	backgroundColor?: BackgroundColor,
+	backgroundColor?: ss.BackgroundColor,
 	backgroundVisible?: boolean,
-	foregroundType?: ForegroundType,
+	foregroundType?: ss.ForegroundType,
 	foregroundVisible?: boolean,
 	useOdometer?: boolean,
-	odometerParams?: OdometerParams
+	odometerParams?: ss.OdometerParams
 }
 
 export class Rose {
 	setValue: (newValue: number[]) => this
 	getValue: () => number[]
-	setFrameDesign: (newFrameDesign: FrameDesign) => this
-	setBackgroundColor: (newBackgroundColor: BackgroundColor) => this
-	setForegroundType: (newForegroundType: ForegroundType) => this
+	setFrameDesign: (newFrameDesign: ss.FrameDesign) => this
+	setBackgroundColor: (newBackgroundColor: ss.BackgroundColor) => this
+	setForegroundType: (newForegroundType: ss.ForegroundType) => this
 	repaint: () => void
 	setOdoValue: (newValue: number) => this;
 	setOdoValueAnimated: (newValue: number, callback?: () => void) => this;
@@ -46,14 +46,14 @@ export class Rose {
 
 		let frameDesign =
 			undefined === parameters.frameDesign
-				? FrameDesign.METAL
+				? ss.FrameDesign.METAL
 				: parameters.frameDesign;
 		const frameVisible =
 			undefined === parameters.frameVisible ? true : parameters.frameVisible;
 
 		let backgroundColor =
 			undefined === parameters.backgroundColor
-				? BackgroundColor.DARK_GRAY
+				? ss.BackgroundColor.DARK_GRAY
 				: parameters.backgroundColor;
 		const backgroundVisible =
 			undefined === parameters.backgroundVisible
@@ -62,7 +62,7 @@ export class Rose {
 
 		let foregroundType =
 			undefined === parameters.foregroundType
-				? ForegroundType.TYPE1
+				? ss.ForegroundType.TYPE1
 				: parameters.foregroundType;
 		const foregroundVisible =
 			undefined === parameters.foregroundVisible
@@ -119,7 +119,7 @@ export class Rose {
 		// Buffer for Rose chart plot
 		const plotBuffer = createBuffer(plotSize, plotSize);
 
-		let odoGauge: Odometer, odoBuffer: HTMLCanvasElement, odoContext: CanvasRenderingContext2D|null;
+		let odoGauge: ss.Odometer, odoBuffer: HTMLCanvasElement, odoContext: CanvasRenderingContext2D|null;
 		if (useOdometer) {
 			odoBuffer = createBuffer(10, 10);
 			odoContext = odoBuffer.getContext('2d');
@@ -181,7 +181,7 @@ export class Rose {
 			initialized = true;
 
 			if (drawFrame2 && frameVisible && frameContext) {
-				drawFrame(
+				ss.drawFrame(
 					frameContext,
 					frameDesign,
 					centerX,
@@ -192,7 +192,7 @@ export class Rose {
 			}
 
 			if (drawBackground2 && backgroundVisible && backgroundContext) {
-				drawBackground(
+				ss.drawBackground(
 					backgroundContext,
 					backgroundColor,
 					centerX,
@@ -228,7 +228,7 @@ export class Rose {
 			}
 
 			if (drawForeground2 && foregroundVisible && foregroundContext) {
-				drawForeground(
+				ss.drawForeground(
 					foregroundContext,
 					foregroundType,
 					imageWidth,
@@ -238,7 +238,7 @@ export class Rose {
 			}
 
 			if (drawOdo && useOdometer && odoContext) {
-				odoGauge = new Odometer('', {
+				odoGauge = new ss.Odometer('', {
 					_context: odoContext,
 					height: Math.ceil(size * 0.08),
 					decimals: odometerParams.decimals === undefined ? 1 : odometerParams.decimals,
