@@ -16,7 +16,7 @@
 
 > &nbsp;
 > Wind Rose gauge addon for [nicolas-van/steelseries](https://nicolas-van.github.io/steelseries/) gauges library.
-> &nbsp;
+> 
 > Rose Chart by [RGraph](https://www.rgraph.net/canvas/rose.html), and rose workflow by [mcrossley/SteelSeries-Weather-Gauges](https://github.com/mcrossley/SteelSeries-Weather-Gauges)
 > &nbsp;
 
