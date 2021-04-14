@@ -1,6 +1,7 @@
 // Generated using webpack-cli http://github.com/webpack-cli
 const path = require('path');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
 	//mode: 'development',
@@ -13,7 +14,7 @@ module.exports = {
     libraryTarget: 'umd'
 	},
 	plugins: [
-		new ESLintPlugin({ extensions: ["js", "ts"] })
+		new ESLintPlugin({ extensions: ["ts"] })
 	],
 	module: {
 		rules: [
@@ -28,4 +29,9 @@ module.exports = {
 	resolve: {
 		extensions: ['.ts', '.js'],
 	},
+	optimization: {
+    minimizer: [new TerserPlugin({
+      extractComments: false,
+    })],
+  }
 };

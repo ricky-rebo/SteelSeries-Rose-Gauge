@@ -18,6 +18,7 @@
     "spaced-comment": "error",
     "indent": ["error", "tab"],
     "semi": ["error", "always"],
-    "no-var": "error"
+    "no-var": "error",
+    "@typescript-eslint/no-this-alias": "off"
   }
 }
