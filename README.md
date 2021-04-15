@@ -73,21 +73,21 @@ Use unpkg: https://unpkg.com/steelseries-rose-gauge
   <br/>
   <li> 
     <b>frameDesign</b> (default: steelseries.FrameDesign.METAL): gauge frame design
-    <p>See https://nicolas-van.github.io/steelseries/ demo page for all available frame designs</p> 
+    See https://nicolas-van.github.io/steelseries/ demo page for all available frame designs
   </li>
   <br/>
   <li> <b>frameVisible</b> (default: true): draw the frame? </li>
   <br/>
   <li>
     <b>backgroundColor</b> (default: steelseries.BackgroundColor.DARK_GRAY): gauge background color
-    <p>See https://nicolas-van.github.io/steelseries/ demo page for all available background colors</p>
+    See https://nicolas-van.github.io/steelseries/ demo page for all available background colors
   </li>
   <br/>
   <li> <b>backgroundVisible</b> (default: true): draw the background? </li>
   <br/>
   <li>
     <b>foregroundType</b> (default: steelseries.ForegroundType.TYPE1): gauge foreground type
-    <p>See https://nicolas-van.github.io/steelseries/ demo page for all available foreground types</p>
+    See https://nicolas-van.github.io/steelseries/ demo page for all available foreground types
   </li>
   <br/>
   <li> <b>foregroundVisible</b> (default: true): draw the foreground? </li>
