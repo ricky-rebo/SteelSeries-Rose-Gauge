@@ -17,7 +17,7 @@
 > &nbsp;
 > Wind Rose gauge addon for [nicolas-van/steelseries](https://github.com/nicolas-van/steelseries) gauges library.
 > 
-> Rose Chart by [RGraph](https://www.rgraph.net/canvas/rose.html), and rose workflow by [mcrossley/SteelSeries-Weather-Gauges](https://github.com/mcrossley/SteelSeries-Weather-Gauges)
+> &nbsp;Rose Chart by [RGraph](https://www.rgraph.net/canvas/rose.html), and rose workflow by [mcrossley/SteelSeries-Weather-Gauges](https://github.com/mcrossley/SteelSeries-Weather-Gauges)
 > &nbsp;
 
 
@@ -72,21 +72,21 @@ Use unpkg: https://unpkg.com/steelseries-rose-gauge
   <li> <b>pointSymbols</b> (default: ["N", "E", "S", "W"]): cardinal points labels </li>
   <br/>
   <li> 
-    <b>frameDesign</b> (default: steelseries.FrameDesign.METAL): gauge frame design
+    <b>frameDesign</b> (default: steelseries.FrameDesign.METAL): gauge frame design<br/>
     See https://nicolas-van.github.io/steelseries/ demo page for all available frame designs
   </li>
   <br/>
   <li> <b>frameVisible</b> (default: true): draw the frame? </li>
   <br/>
   <li>
-    <b>backgroundColor</b> (default: steelseries.BackgroundColor.DARK_GRAY): gauge background color
+    <b>backgroundColor</b> (default: steelseries.BackgroundColor.DARK_GRAY): gauge background color<br/>
     See https://nicolas-van.github.io/steelseries/ demo page for all available background colors
   </li>
   <br/>
   <li> <b>backgroundVisible</b> (default: true): draw the background? </li>
   <br/>
   <li>
-    <b>foregroundType</b> (default: steelseries.ForegroundType.TYPE1): gauge foreground type
+    <b>foregroundType</b> (default: steelseries.ForegroundType.TYPE1): gauge foreground type<br/>
     See https://nicolas-van.github.io/steelseries/ demo page for all available foreground types
   </li>
   <br/>
