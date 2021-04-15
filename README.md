@@ -61,7 +61,7 @@ Use unpkg: https://unpkg.com/steelseries-rose-gauge
 
 ## Documentation
 
-##### Constructor Params
+#### Constructor Params
 <ul>
   <li> <b>size</b> (default: smaller dimension between width and height of the canvas): gauge size</li>
   <br/>
@@ -108,7 +108,7 @@ Use unpkg: https://unpkg.com/steelseries-rose-gauge
   </li>
 </ul>
 
-##### Constructor Params
+#### Rose Methods
 <ul>
   <li>
     <b>constructor(elementOrId, params)</b>
