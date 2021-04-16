@@ -54,7 +54,7 @@ Use unpkg: https://unpkg.com/steelseries-rose-gauge
   <script src="https://unpkg.com/steelseries"></script>
   <script src="https://unpkg.com/steelseries-rose-gauge"></script>
   <script>
-    const rose = new ssRose.Rose("rose-canvas", { ... })
+    const rose = new steelseriesRose.Rose("rose-canvas", { ... })
   </script>
 </body>
 ```
