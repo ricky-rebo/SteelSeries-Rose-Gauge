@@ -175,7 +175,7 @@ Use unpkg: https://unpkg.com/steelseries-rose-gauge
 👤 **[Riccardo Rebottini](https://github.com/ricky-rebo)**
 
 * Website: https://www.rebottini.it
-* Twitter: [@ricky\_rebo](https://twitter.com/ricky\_rebo)
+* Twitter: [@ricky_rebo](https://twitter.com/ricky\_rebo)
 * Github: [@ricky-rebo](https://github.com/ricky-rebo)
 
 ## 🤝 Contributing
