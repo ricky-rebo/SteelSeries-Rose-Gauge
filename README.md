@@ -15,9 +15,9 @@
 </p>
 
 > &nbsp;
-> Wind Rose gauge addon for [nicolas-van/steelseries](https://nicolas-van.github.io/steelseries/) gauges library.
+> Wind Rose gauge addon for [nicolas-van/steelseries](https://github.com/nicolas-van/steelseries) gauges library.
 > 
-> Rose Chart by [RGraph](https://www.rgraph.net/canvas/rose.html), and rose workflow by [mcrossley/SteelSeries-Weather-Gauges](https://github.com/mcrossley/SteelSeries-Weather-Gauges)
+> &nbsp;Rose Chart by [RGraph](https://www.rgraph.net/canvas/rose.html), and rose workflow by [mcrossley/SteelSeries-Weather-Gauges](https://github.com/mcrossley/SteelSeries-Weather-Gauges)
 > &nbsp;
 
 
@@ -54,7 +54,7 @@ Use unpkg: https://unpkg.com/steelseries-rose-gauge
   <script src="https://unpkg.com/steelseries"></script>
   <script src="https://unpkg.com/steelseries-rose-gauge"></script>
   <script>
-    const rose = new ssRose.Rose("rose-canvas", { ... })
+    const rose = new steelseriesRose.Rose("rose-canvas", { ... })
   </script>
 </body>
 ```
@@ -72,22 +72,22 @@ Use unpkg: https://unpkg.com/steelseries-rose-gauge
   <li> <b>pointSymbols</b> (default: ["N", "E", "S", "W"]): cardinal points labels </li>
   <br/>
   <li> 
-    <b>frameDesign</b> (default: steelseries.FrameDesign.METAL): gauge frame design
-    <p>See <a src="https://nicolas-van.github.io/steelseries/">nicolas-van/steelseries demo page</a> for all available frame designs</p> 
+    <b>frameDesign</b> (default: steelseries.FrameDesign.METAL): gauge frame design<br/>
+    See https://nicolas-van.github.io/steelseries/ demo page for all available frame designs
   </li>
   <br/>
   <li> <b>frameVisible</b> (default: true): draw the frame? </li>
   <br/>
   <li>
-    <b>backgroundColor</b> (default: steelseries.BackgroundColor.DARK_GRAY): gauge background color
-    <p>See <a src="https://nicolas-van.github.io/steelseries/">nicolas-van/steelseries demo page</a> for all available background colors</p>
+    <b>backgroundColor</b> (default: steelseries.BackgroundColor.DARK_GRAY): gauge background color<br/>
+    See https://nicolas-van.github.io/steelseries/ demo page for all available background colors
   </li>
   <br/>
   <li> <b>backgroundVisible</b> (default: true): draw the background? </li>
   <br/>
   <li>
-    <b>foregroundType</b> (default: steelseries.ForegroundType.TYPE1): gauge foreground type
-    <p>See <a src="https://nicolas-van.github.io/steelseries/">nicolas-van/steelseries demo page</a> for all available foreground types</p>
+    <b>foregroundType</b> (default: steelseries.ForegroundType.TYPE1): gauge foreground type<br/>
+    See https://nicolas-van.github.io/steelseries/ demo page for all available foreground types
   </li>
   <br/>
   <li> <b>foregroundVisible</b> (default: true): draw the foreground? </li>
