@@ -6,4 +6,4 @@ declare namespace RGraph {
 	}
 }
 
-export default RGraph;
+export default RGraph

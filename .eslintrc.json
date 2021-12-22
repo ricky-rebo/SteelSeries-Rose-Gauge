@@ -2,7 +2,8 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint/eslint-plugin",
+    "eslint-plugin-tsdoc"
   ],
   "extends": [
     "eslint:recommended",
@@ -17,8 +18,9 @@
     "keyword-spacing": "error",
     "spaced-comment": "error",
     "indent": ["error", "tab"],
-    "semi": ["error", "always"],
+    "semi": ["error", "never"],
     "no-var": "error",
-    "@typescript-eslint/no-this-alias": "off"
+    "@typescript-eslint/no-this-alias": "off",
+    "tsdoc/syntax": "warn"
   }
 }
