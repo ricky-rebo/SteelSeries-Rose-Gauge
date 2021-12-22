@@ -11,6 +11,7 @@
   "scripts": {
     "test": "jest --config jestconfig.json",
     "lint": "npx eslint --ext .ts src/",
+    "lint:fix": "npx eslint --fix --ext .ts src/",
     "build": "npm run build:prod",
     "build:dev": "webpack --mode=development -c webpack.config.js",
     "build:prod": "webpack --mode=production -c webpack.config.js",
@@ -39,10 +40,10 @@
   "devDependencies": {
     "@types/jest": "^26.0.22",
     "@types/steelseries": "^1.0.1",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
-    "@webpack-cli/generators": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
     "eslint": "^7.24.0",
+    "eslint-plugin-tsdoc": "^0.2.14",
     "eslint-webpack-plugin": "^2.5.3",
     "jest": "^26.6.3",
     "jest-canvas-mock": "^2.3.1",
@@ -50,7 +51,7 @@
     "ts-loader": "^8.1.0",
     "typescript": "^4.2.4",
     "webpack": "^5.32.0",
-    "webpack-cli": "^4.6.0"
+    "webpack-cli": "^4.9.1"
   },
   "peerDependencies": {
     "steelseries": "^1.0.7"
