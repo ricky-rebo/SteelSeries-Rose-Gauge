@@ -16,6 +16,6 @@ constructor(canvas: HTMLCanvasElement | string, parameters?: RoseParams);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  canvas | HTMLCanvasElement \| string | canvas elemnt id, or canvas element itself |
+|  canvas | HTMLCanvasElement \| string | canvas element id, or canvas element itself |
 |  parameters | [RoseParams](./steelseries-rose-gauge.roseparams.md) | gauge construction pasrameters |
 

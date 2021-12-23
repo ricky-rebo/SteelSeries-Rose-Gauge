@@ -108,7 +108,7 @@ export class Rose {
 	repaint: () => void;
 
 	/**
-	 * @param canvas - canvas elemnt id, or canvas element itself
+	 * @param canvas - canvas element id, or canvas element itself
 	 * @param parameters - gauge construction pasrameters
 	 * @returns Instance of a Rose-Chart Gauge
 	 */

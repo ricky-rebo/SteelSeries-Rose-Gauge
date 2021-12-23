@@ -185,7 +185,7 @@
             {
               "kind": "Constructor",
               "canonicalReference": "steelseries-rose-gauge!Rose:constructor(1)",
-              "docComment": "/**\n * Constructs a new instance of the `Rose` class\n *\n * @param canvas - canvas elemnt id, or canvas element itself\n *\n * @param parameters - gauge construction pasrameters\n *\n * @returns Instance of a Rose-Chart Gauge\n */\n",
+              "docComment": "/**\n * Constructs a new instance of the `Rose` class\n *\n * @param canvas - canvas element id, or canvas element itself\n *\n * @param parameters - gauge construction pasrameters\n *\n * @returns Instance of a Rose-Chart Gauge\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
