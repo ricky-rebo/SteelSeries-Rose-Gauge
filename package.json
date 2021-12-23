@@ -9,13 +9,14 @@
     "dist/**/*"
   ],
   "scripts": {
+    "watch": "webpack --watch",
+    "build": "npm run build:prod",
     "test": "jest --config jestconfig.json",
     "lint": "npx eslint --ext .ts src/",
+    "docs": "api-extractor run --local --verbose && api-documenter markdown -i temp/ -o docs/",
     "lint:fix": "npx eslint --fix --ext .ts src/",
-    "build": "npm run build:prod",
     "build:dev": "webpack --mode=development -c webpack.config.js",
     "build:prod": "webpack --mode=production -c webpack.config.js",
-    "watch": "webpack --watch",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
@@ -24,8 +25,8 @@
   },
   "keywords": [
     "steelseries",
-    "rose",
-    "wnd-rose",
+    "rose-chart",
+    "wind-rose",
     "canvas"
   ],
   "author": "Riccardo Rebottini <ricky@rebottini.it> (https://github.com/ricky-rebo)",

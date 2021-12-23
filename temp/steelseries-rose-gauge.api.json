@@ -1,0 +1,1118 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.19.2",
+    "schemaVersion": 1004,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      }
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "steelseries-rose-gauge!",
+  "docComment": "/**\n * A simple add-on for {@link https://github.com/nicolas-van/steelseries | steelseries} library.\n *\n * Provides a rose chart round gauge.\n *\n * @packageDocumentation\n */\n",
+  "name": "steelseries-rose-gauge",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "steelseries-rose-gauge!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "steelseries-rose-gauge!Rose:class",
+          "docComment": "/**\n * Round Rose-Chart Gauge\n *\n * @remarks\n *\n * require `steelseries` package installed or imported globally\n *\n * @example\n *\n * Example passing directly the canvas id\n * ```ts\n * const rose = new Rose('canvasId', {\n * \t\tsize: 200,\n * \t\t// ...\n * })\n * ```\n *\n * @example\n *\n * Example passing the canvas element\n * ```ts\n * const canvas = document.getElementById('canvasId')\n * // or\n * const canvas = document.createElement('canvas')\n *\n * const rose = new Rose(canvas, {\n * \t\t// ...\n * })\n * ```\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class Rose "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Rose",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "steelseries-rose-gauge!Rose:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `Rose` class\n *\n * @param canvas - canvas elemnt id, or canvas element itself\n *\n * @param parameters - gauge construction pasrameters\n *\n * @returns Instance of a Rose-Chart Gauge\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(canvas: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLCanvasElement",
+                  "canonicalReference": "!HTMLCanvasElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", parameters?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RoseParams",
+                  "canonicalReference": "steelseries-rose-gauge!RoseParams:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "canvas",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "parameterName": "parameters",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#getBackgroundColor:member",
+              "docComment": "/**\n * Return current background color\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getBackgroundColor: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => ss."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BackgroundColor",
+                  "canonicalReference": "@types/steelseries!BackgroundColor:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "getBackgroundColor",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#getForegroundType:member",
+              "docComment": "/**\n * Return current foreground type\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getForegroundType: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => ss."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ForegroundType",
+                  "canonicalReference": "@types/steelseries!ForegroundType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "getForegroundType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#getFrameDesign:member",
+              "docComment": "/**\n * Return current frame design\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getFrameDesign: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => ss."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ForegroundType",
+                  "canonicalReference": "@types/steelseries!ForegroundType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "getFrameDesign",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#getOdoValue:member",
+              "docComment": "/**\n * Return current odometer value\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getOdoValue: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "getOdoValue",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#getPointSymbols:member",
+              "docComment": "/**\n * Return current cardinal points symbols\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getPointSymbols: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "getPointSymbols",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#getTitleString:member",
+              "docComment": "/**\n * Return current title string\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getTitleString: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "getTitleString",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#getUnitString:member",
+              "docComment": "/**\n * Return current unit string\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getUnitString: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "getUnitString",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#getValue:member",
+              "docComment": "/**\n * Return current Rose value\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getValue: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => number[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "getValue",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#repaint:member",
+              "docComment": "/**\n * Repaint the gauge\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "repaint: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "repaint",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#setBackgroundColor:member",
+              "docComment": "/**\n * Set a new background color\n *\n * @see\n *\n * steelseries.BackgroundColor for background color options\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setBackgroundColor: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(newBackgroundColor: ss."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BackgroundColor",
+                  "canonicalReference": "@types/steelseries!BackgroundColor:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "setBackgroundColor",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#setForegroundType:member",
+              "docComment": "/**\n * Set a new foreground type\n *\n * @see\n *\n * steelseries.ForegroundType for foreground type options\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setForegroundType: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(newForegroundType: ss."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ForegroundType",
+                  "canonicalReference": "@types/steelseries!ForegroundType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "setForegroundType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#setFrameDesign:member",
+              "docComment": "/**\n * Set a new frame design\n *\n * @see\n *\n * steelseries.FrameDesign for design options\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setFrameDesign: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(newFrameDesign: ss."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FrameDesign",
+                  "canonicalReference": "@types/steelseries!FrameDesign:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "setFrameDesign",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#setOdoValue:member",
+              "docComment": "/**\n * Change odometer value\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setOdoValue: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(newValue: number) => this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "setOdoValue",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#setOdoValueAnimated:member",
+              "docComment": "/**\n * Change odometer value, with animation\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setOdoValueAnimated: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(newValue: number, callback?: () => void) => this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "setOdoValueAnimated",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#setPointSymbols:member",
+              "docComment": "/**\n * Change cardinal points symbols\n *\n * @param newPointSymbols - 4 or 8 elements array\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setPointSymbols: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(newPointSymbols: string[]) => this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "setPointSymbols",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#setTitleString:member",
+              "docComment": "/**\n * Change title string\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setTitleString: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(newTitle: string | number) => this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "setTitleString",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#setUnitString:member",
+              "docComment": "/**\n * Change unit string\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setUnitString: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(newUnit: string) => this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "setUnitString",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "steelseries-rose-gauge!Rose#setValue:member",
+              "docComment": "/**\n * Change Rose value\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setValue: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(newValue: number[]) => this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "setValue",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "steelseries-rose-gauge!RoseParams:interface",
+          "docComment": "/**\n * Rose gauge construction parameters\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface RoseParams "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RoseParams",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "steelseries-rose-gauge!RoseParams#backgroundColor:member",
+              "docComment": "/**\n * Gauge background color - default: `steelseries.BackgroundColor.DARK_GRAY`\n *\n * @remarks\n *\n * ignored if {@link RoseParams.backgroundVisible | backgroundVisible} = `false`\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "backgroundColor?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "ss."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BackgroundColor",
+                  "canonicalReference": "@types/steelseries!BackgroundColor:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "backgroundColor",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "steelseries-rose-gauge!RoseParams#backgroundVisible:member",
+              "docComment": "/**\n * Draw gauge background? - default: `true`\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "backgroundVisible?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "backgroundVisible",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "steelseries-rose-gauge!RoseParams#foregroundType:member",
+              "docComment": "/**\n * Gauge foreground type - default: `steelseries.ForegroundType.TYPE1`\n *\n * @remarks\n *\n * ignored if {@link RoseParams.foregroundVisible | foregroundVisible} = `false`\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "foregroundType?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "ss."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ForegroundType",
+                  "canonicalReference": "@types/steelseries!ForegroundType:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "foregroundType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "steelseries-rose-gauge!RoseParams#foregroundVisible:member",
+              "docComment": "/**\n * Draw gauge foreground? - default: `true`\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "foregroundVisible?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "foregroundVisible",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "steelseries-rose-gauge!RoseParams#frameDesign:member",
+              "docComment": "/**\n * Gauge frame design - default: `steelseries.FrameDesign.METAL`\n *\n * @remarks\n *\n * ignored if {@link RoseParams.frameVisible | frameVisible} = `false`\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "frameDesign?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "ss."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FrameDesign",
+                  "canonicalReference": "@types/steelseries!FrameDesign:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "frameDesign",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "steelseries-rose-gauge!RoseParams#frameVisible:member",
+              "docComment": "/**\n * Draw gauge frame? - default: `true`\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "frameVisible?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "frameVisible",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "steelseries-rose-gauge!RoseParams#odometerParams:member",
+              "docComment": "/**\n * Odometer construction params\n *\n * @remarks\n *\n * ignored if {@link RoseParams.useOdometer | useOdometer} = `false`\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "odometerParams?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "ss."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OdometerParams",
+                  "canonicalReference": "@types/steelseries!OdometerParams:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "odometerParams",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "steelseries-rose-gauge!RoseParams#pointSymbols:member",
+              "docComment": "/**\n * Cardinal points labels - default: `[\"N\", \"E\", \"S\", \"W\"]`\n *\n * @remarks\n *\n * Must be 4 or 8 elements long\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pointSymbols?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "pointSymbols",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "steelseries-rose-gauge!RoseParams#size:member",
+              "docComment": "/**\n * Gauge size (px) - default: smaller dimension between `canvas.width` and `canvas.height`\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "size?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "size",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "steelseries-rose-gauge!RoseParams#titleString:member",
+              "docComment": "/**\n * * Gauge upper title string - default: `\"\"`\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "titleString?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "titleString",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "steelseries-rose-gauge!RoseParams#unitString:member",
+              "docComment": "/**\n * Gauge lower string title - default: `\"\"`\n *\n * @remarks\n *\n * if {@link RoseParams.useOdometer | useOdometer} = `true`, it works as odometer title)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "unitString?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "unitString",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "steelseries-rose-gauge!RoseParams#useOdometer:member",
+              "docComment": "/**\n * Draw odometer? - default: `false`\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "useOdometer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "useOdometer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}
